@@ -35,7 +35,7 @@
 const WHATSAPP_NUMBER = '905535848767';
 document.getElementById('year').textContent = new Date().getFullYear();
 function whatsappUrl(text){return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(text)}
-document.getElementById('whatsappLink').href=whatsappUrl('Merhaba, Yurttaşlar İnşaat Yapı Dekorasyon hakkında bilgi almak istiyorum.');
+document.getElementById('whatsappLink').<a href="https://wa.me/905535848767?text=Merhaba,%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank">=whatsappUrl('Merhaba, Yurttaşlar İnşaat Yapı Dekorasyon hakkında bilgi almak istiyorum.');
 document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const f=new FormData(this);const msg='Merhaba, Yurttaşlar İnşaat Yapı Dekorasyon için teklif almak istiyorum.\nAd Soyad: '+f.get('name')+'\nTelefon: '+f.get('phone')+'\nHizmet: '+f.get('service')+'\nProje detayı: '+(f.get('message')||'Belirtilmedi');if(WHATSAPP_NUMBER.includes('X')){alert('WhatsApp bağlantısını etkinleştirmek için HTML dosyasındaki WHATSAPP_NUMBER alanına işletme WhatsApp numaranızı yazın.');return;}window.open(whatsappUrl(msg),'_blank','noopener');});
 </script>
 </body></html>

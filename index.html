@@ -1,230 +1,179 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yurttaşlar İnşaat Yapı Dekorasyon | Ankara</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: system-ui, -apple-system, sans-serif; color: #2d3748; line-height: 1.6; background-color: #fff; }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; height: auto; display: block; object-fit: cover; }
-    
-    .top-bar { background: #1a202c; color: #cbd5e0; font-size: 0.85rem; padding: 8px 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-    
-    header { background: #fff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; }
-    .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.25rem; font-weight: 800; color: #1a202c; }
-    .logo small { display: block; font-size: 0.65rem; color: #718096; letter-spacing: 1.5px; }
-    
-    nav { display: flex; gap: 20px; font-weight: 500; font-size: 0.95rem; align-items: center; }
-    nav a:hover { color: #3182ce; }
-    
-    .dropdown { position: relative; display: inline-block; }
-    .dropdown-btn { cursor: pointer; padding: 10px 0; }
-    .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 230px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-radius: 8px; border: 1px solid #e2e8f0; overflow: hidden; }
-    .dropdown-content a { color: #2d3748; padding: 12px 18px; display: block; font-size: 0.9rem; border-bottom: 1px solid #f7fafc; }
-    .dropdown-content a:hover { background: #ebf8ff; color: #2b6cb0; font-weight: 600; }
-    .dropdown:hover .dropdown-content { display: block; }
+      <!-- Hizmetlerimiz Alt Menü -->
+      <li class="dropdown">
+        <a href="#hizmetler">Hizmetlerimiz ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#hizmet-insaat">İnşaat & Komple Tadilat</a></li>
+          <li><a href="#hizmet-dekorasyon">İç & Dış Dekorasyon</a></li>
+          <li><a href="#ferforje">Ferforje & Metal Sistemleri</a></li>
+          <li><a href="#hizmet-peyzaj">Peyzaj Tasarımı</a></li>
+          <li><a href="#hizmet-bahce">Bahçe Düzenleme</a></li>
+        </ul>
+      </li>
 
-    .btn-quote { background: #2b6cb0; color: #fff; padding: 8px 18px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; }
+      <!-- Projelerimiz Alt Menü -->
+      <li class="dropdown">
+        <a href="#projeler">Projelerimiz ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#ferforje">Ferforje Kapı & Korkuluklar</a></li>
+          <li><a href="#projeler">Tamamlanan Konut Projeleri</a></li>
+          <li><a href="#projeler">Peyzaj & Bahçe Uygulamaları</a></li>
+        </ul>
+      </li>
 
-    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; }
-    .hero h1 { font-size: 2.5rem; margin: 15px 0; }
-    .hero p { font-size: 1.2rem; color: #e2e8f0; margin-bottom: 30px; }
-    .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary { background: #3182ce; color: white; padding: 12px 24px; border-radius: 6px; font-weight: 600; }
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+  <a href="#iletisim" class="btn-contact">Teklif Alın</a>
+</div>
 
-    section { padding: 70px 20px; }
-    .section-title { text-align: center; max-width: 750px; margin: 0 auto 40px auto; }
-    .section-title h2 { font-size: 2rem; color: #1a202c; margin-bottom: 10px; }
 
-    .grid-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-    .card { border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; background: white; }
-    .card img { height: 200px; width: 100%; }
-    .card-body { padding: 20px; }
-    .card-body h3 { margin-bottom: 10px; font-size: 1.25rem; }
+<!-- Çalışma Süreci -->
+<div style="margin-top: 60px;">
+  <h3 style="text-align: center; color: #1a202c; margin-bottom: 20px;">Çalışma Sürecimiz</h3>
+  <div class="process-steps">
+    <div class="step-card">
+      <h4>1. Keşif & Görüşme</h4>
+      <p>Alanınızı yerinde inceliyor, taleplerinizi dinliyoruz.</p>
+    </div>
+    <div class="step-card">
+      <h4>2. Planlama & Bütçe</h4>
+      <p>Projenize en uygun malzeme ve fiyat teklifini hazırlıyoruz.</p>
+    </div>
+    <div class="step-card">
+      <h4>3. İmalat & Uygulama</h4>
+      <p>Uzman ekibimizle titiz bir işçilik sürecini başlatıyoruz.</p>
+    </div>
+    <div class="step-card">
+      <h4>4. Teslimat</h4>
+      <p>Projenizi eksiksiz ve taahhüt edilen sürede teslim ediyoruz.</p>
+    </div>
+  </div>
+</div>
 
-    .contact-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-    .contact-info { background: #1a202c; color: white; padding: 35px; border-radius: 12px; }
-    .contact-form { background: white; padding: 35px; border-radius: 12px; border: 1px solid #e2e8f0; }
-    .form-group { margin-bottom: 15px; }
-    .form-group label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e0; border-radius: 6px; }
-    .btn-submit { width: 100%; background: #2b6cb0; color: white; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
 
-    footer { background: #0f172a; color: #94a3b8; padding: 40px 20px; text-align: center; }
-    .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 999; background: #25D366; color: white; padding: 12px 22px; border-radius: 50px; font-weight: bold; }
-  </style>
-</head>
-<body>
-
-  <div class="top-bar">
-    <span>Ankara ve çevresinde hizmet</span>
-    <span>✉ yurttaslaryapi@gmail.com · ☎ 0553 584 87 67</span>
+<div class="services-grid">
+  <div class="service-card" id="hizmet-insaat">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="İnşaat ve Tadilat">
+    <div class="service-body">
+      <h3>İnşaat & Komple Tadilat</h3>
+      <p>Konut, kaba inşaat, komple daire tadilatı, çatı ve yapı yenileme uygulamaları.</p>
+      <a href="#iletisim">Detaylı Bize Ulaşın →</a>
+    </div>
   </div>
 
-  <header>
-    <div class="nav-container">
-      <a href="#anasayfa" class="logo">
-        <strong>YURTTAŞLAR</strong>
-        <small>İNŞAAT YAPI DEKORASYON</small>
-      </a>
-      
-      <nav>
-        <a href="#anasayfa">Ana Sayfa</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-        
-        <div class="dropdown">
-          <span class="dropdown-btn">Hizmetlerimiz ▾</span>
-          <div class="dropdown-content">
-            <a href="#ferforje">Ferforje & Metal Sistemleri</a>
-            <a href="#hizmetler">İnşaat & Tadilat</a>
-            <a href="#hizmetler">İç & Dış Dekorasyon</a>
-            <a href="#hizmetler">Peyzaj Tasarımı</a>
-            <a href="#hizmetler">Bahçe Düzenleme</a>
-          </div>
-        </div>
-
-        <a href="#projeler">Projelerimiz</a>
-        <a href="#iletisim">İletişim</a>
-      </nav>
-
-      <a href="#iletisim" class="btn-quote">Teklif Al ↗</a>
+  <div class="service-card" id="hizmet-dekorasyon">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="İç Mekan Dekorasyon">
+    <div class="service-body">
+      <h3>İç & Dış Dekorasyon</h3>
+      <p>Alçıpan, asma tavan, boya, seramik, granit ve özel iç mimari dokunuşlar.</p>
+      <a href="#iletisim">Detaylı Bize Ulaşın →</a>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section id="anasayfa" class="hero">
-      <h1>Hayalinizdeki Yaşam Alanları İçin Doğru Adres</h1>
-      <p>Ankara'da inşaat, dekorasyon, peyzaj ve ferforje alanında kaliteli ve güvenilir çözümler.</p>
-      <div class="hero-buttons">
-        <a href="#ferforje" class="btn-primary">Ferforje Modelleri →</a>
+  <div class="service-card" id="hizmet-peyzaj">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Peyzaj Tasarımı">
+    <div class="service-body">
+      <h3>Peyzaj Tasarımı</h3>
+      <p>Yeşil alan tasarımı, rulo çim serme, otomatik sulama sistemleri ve bitkilendirme.</p>
+      <a href="#iletisim">Detaylı Bize Ulaşın →</a>
+    </div>
+  </div>
+
+  <div class="service-card" id="hizmet-bahce">
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Bahçe Düzenleme">
+    <div class="service-body">
+      <h3>Bahçe Düzenleme & Taş Yol</h3>
+      <p>Bahçe yolları, kilit taşı döşeme, teras kaplama ve çevre çit uygulamaları.</p>
+      <a href="#iletisim">Detaylı Bize Ulaşın →</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="services-grid">
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=600&q=80" alt="Villa Ferforje Kapı">
+    <div class="service-body">
+      <h3>Villa Ferforje Kapı Projesi</h3>
+      <p>Özel tasarım sürgülü bahçe kapısı ve fırın boya montajı.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="İç Mekan Tadilat">
+    <div class="service-body">
+      <h3>Konut İç Mekan Dekorasyonu</h3>
+      <p>Komple daire tadilatı, asma tavan ve boya işleri.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Bahçe Peyzaj">
+    <div class="service-body">
+      <h3>Bahçe Peyzaj & Çit İşleri</h3>
+      <p>Çim serme, peyzaj düzenleme ve duvar üstü ferforje çit imalatı.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="contact-container">
+  <!-- İletişim Bilgileri -->
+  <div class="contact-info">
+    <h3>İletişim Bilgilerimiz</h3>
+    <div class="info-item">
+      <small>Adres</small>
+      <strong>Ankara ve Çevre İller</strong>
+    </div>
+    <div class="info-item">
+      <small>Telefon</small>
+      <strong><a href="tel:05535848767" style="color:white;">0553 584 87 67</a></strong>
+    </div>
+    <div class="info-item">
+      <small>E-Posta</small>
+      <strong><a href="mailto:yurttaslaryapi@gmail.com" style="color:white;">yurttaslaryapi@gmail.com</a></strong>
+    </div>
+  </div>
+
+  <!-- Online Form -->
+  <div class="contact-form">
+    <form action="https://formspree.io/f/yurttaslaryapi@gmail.com" method="POST">
+      <div class="form-group">
+        <label for="name">Adınız Soyadınız *</label>
+        <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz">
       </div>
-    </section>
-
-    <!-- Ferforje Bölümü -->
-    <section id="ferforje" style="background: #f8fafc;">
-      <div class="section-title">
-        <h2>Ferforje & Özel Metal İmalatı</h2>
-        <p>Bahçe kapıları, korkuluklar ve özel tasarım demir doğrama çözümleri.</p>
+      <div class="form-group">
+        <label for="phone">Telefon Numarası *</label>
+        <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
       </div>
-
-      <div class="grid-container">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=80" alt="Ferforje Kapı">
-          <div class="card-body">
-            <h3>Bahçe & Yana Kayar Kapılar</h3>
-            <p>Villa ve site girişleri için özel imalat ferforje kapılar.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=700&q=80" alt="Ferforje Korkuluk">
-          <div class="card-body">
-            <h3>Balkon & Merdiven Korkulukları</h3>
-            <p>Güvenli ve şık fırın boyalı demir korkuluk sistemleri.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="Ferforje Çit">
-          <div class="card-body">
-            <h3>Bahçe Çiti & Panel Çit</h3>
-            <p>Bahçe duvarı üzeri dekoratif demir parmaklıklar ve çitler.</p>
-          </div>
-        </div>
+      <div class="form-group">
+        <label for="service">İlgilendiğiniz Hizmet</label>
+        <select id="service" name="service">
+          <option value="Insaat">İnşaat / Tadilat</option>
+          <option value="Dekorasyon">İç & Dış Dekorasyon</option>
+          <option value="Ferforje">Ferforje & Metal Sistemleri</option>
+          <option value="Peyzaj">Peyzaj Tasarımı</option>
+          <option value="Bahce">Bahçe Düzenleme</option>
+        </select>
       </div>
-    </section>
-
-    <!-- Hizmetlerimiz Bölümü -->
-    <section id="hizmetler">
-      <div class="section-title">
-        <h2>Diğer Hizmetlerimiz</h2>
-        <p>İnşaat, dekorasyon ve peyzaj uygulamalarımız.</p>
+      <div class="form-group">
+        <label for="message">Mesajınız / Proje Detayları</label>
+        <textarea id="message" name="message" rows="4" placeholder="Projeniz hakkında kısaca bilgi verin..."></textarea>
       </div>
+      <button type="submit" class="btn-submit">Teklif Gönder</button>
+    </form>
+  </div>
+</div>
 
-      <div class="grid-container">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80" alt="İnşaat">
-          <div class="card-body">
-            <h3>İnşaat & Tadilat</h3>
-            <p>Komple daire yenileme ve yapı yenileme işleri.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Dekorasyon">
-          <div class="card-body">
-            <h3>Dekorasyon</h3>
-            <p>Asma tavan, alçıpan, boya ve iç mekan çözümleri.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Peyzaj">
-          <div class="card-body">
-            <h3>Peyzaj & Bahçe</h3>
-            <p>Rulo çim, çim serme, bahçe düzenleme ve taş yollar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- İletişim Bölümü -->
-    <section id="iletisim" style="background: #f8fafc;">
-      <div class="section-title">
-        <h2>Projeniz İçin Teklif Alın</h2>
-        <p>Aşağıdaki formu doldurarak bize ulaşabilirsiniz.</p>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <h2>İletişim Bilgilerimiz</h2>
-          <p style="margin: 20px 0;"><strong>Telefon:</strong> 0553 584 87 67</p>
-          <p style="margin-bottom: 20px;"><strong>E-Posta:</strong> yurttaslaryapi@gmail.com</p>
-          <p><strong>Bölge:</strong> Ankara ve Çevresi</p>
-        </div>
-
-        <div class="contact-form">
-          <form action="https://formspree.io/f/yurttaslaryapi@gmail.com" method="POST">
-            <div class="form-group">
-              <label for="name">Adınız Soyadınız *</label>
-              <input type="text" id="name" name="name" required placeholder="Ahmet Yılmaz">
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefon *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
-            </div>
-            <div class="form-group">
-              <label for="service">Hizmet Türü</label>
-              <select id="service" name="service">
-                <option>Ferforje & Metal İşleri</option>
-                <option>İnşaat / Tadilat</option>
-                <option>Dekorasyon</option>
-                <option>Peyzaj & Bahçe</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Mesajınız</label>
-              <textarea id="message" name="message" rows="3" placeholder="Projeniz hakkında kısa bilgi..."></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Teklif Gönder</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p><strong>YURTTAŞLAR İNŞAAT YAPI DEKORASYON</strong></p>
-    <p>© Yurttaşlar. Tüm hakları saklıdır.</p>
-  </footer>
-
-  <a href="https://wa.me/905535848767?text=Merhaba,%20bilgi%20almak%20istiyorum." class="whatsapp-float" target="_blank">
-    ☏ WhatsApp
-  </a>
-
-</body>
-</html>
+<!-- Google Harita -->
+<div style="margin-top: 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.30043003002!2d32.62268153098555!3d39.90355568155208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+    width="100%" 
+    height="350" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
